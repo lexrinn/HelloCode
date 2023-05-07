@@ -53,3 +53,17 @@ string Method4(int count, string text)
 }
 string res = Method4(10, "z");
 Console.WriteLine(res);
+
+// Вид 4 с использованием цикла for.    Что-то принимают и что-то возвращают.
+
+string Method41(int count, string text)
+{
+    string result = String.Empty;
+    for (int i=0; i<count; i++)
+        {
+        result = result + text;
+    }
+    return result;
+}
+string rslt = Method41(10, "asdf");
+Console.WriteLine(rslt);
