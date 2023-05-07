@@ -17,7 +17,7 @@ Method2("Текст сообщения");
 
 void Method21(string msg, int count)               // Идентификатор и какое-то количество аргументов.
 {
-    int i=0;
+    int i=0;                                       // i - счетчик.
     while (i<count)
     {
         Console.WriteLine (msg);
@@ -67,3 +67,14 @@ string Method41(int count, string text)
 }
 string rslt = Method41(10, "asdf");
 Console.WriteLine(rslt);
+
+// Цикл в цикле
+
+for (int i=2; i<=10; i++)
+{
+    for (int j=2; j<=10; j++)
+    {
+        Console.WriteLine($"{i}x{j}={i*j}");
+    }
+    Console.WriteLine();
+}
